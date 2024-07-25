@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #f0f0f0;
     color: #000;
     font-family: Arial, sans-serif;
@@ -54,4 +54,45 @@ body {
     width: 100%;
     max-width: 800px;
     height: auto;
+} */
+ 
+.drawing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure the container takes up the full viewport height */
+    background-color: #f0f0f0;
+    padding: 20px; /* Add padding if needed */
+}
+
+
+.heading {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.canvas {
+    border: 2px solid #000;
+    background-color: #fff;
+    box-shadow: 0 
+}
+
+.tools {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.color-picker {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.brush-size {
+    width: 200px;
+    cursor: pointer;
 }

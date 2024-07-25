@@ -11,21 +11,23 @@ function App() {
             setIsJoined(true);
         }
     };
-
+    
     return (
         <div className="App">
             <header className="App-header">
-                <h1>Collaborative Drawing Platform</h1>
                 {!isJoined ? (
-                    <div className="join-room">
-                        <input 
-                            type="text" 
-                            placeholder="Enter Drawing ID" 
-                            value={drawingId} 
-                            onChange={(e) => setDrawingId(e.target.value)} 
-                        />
-                        <button onClick={handleJoinRoom}>Join Room</button>
-                    </div>
+                    <>
+                        <h1>{`Collaborate & Draw`}</h1>
+                        <div className="join-room">
+                            <input 
+                                type="text" 
+                                placeholder="Enter Drawing ID" 
+                                value={drawingId} 
+                                onChange={(e) => setDrawingId(e.target.value)} 
+                            />
+                            <button onClick={handleJoinRoom}>Join Room</button>
+                        </div>
+                    </>
                 ) : (
                     <DrawingCanvas drawingId={drawingId} />
                 )}
