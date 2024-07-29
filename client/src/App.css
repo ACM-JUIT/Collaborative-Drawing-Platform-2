@@ -1,5 +1,11 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  width: 100vw; /* Full width */
+  background-color: #f0f0f0; /* Light grey background */
 }
 
 .App-header {
@@ -11,6 +17,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #333;
+}
+
+.App-header h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
 }
 
 .join-room {
